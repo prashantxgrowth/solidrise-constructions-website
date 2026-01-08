@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SolidRise Constructions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fff;color:#1e1e1e}
+
+/* NAVBAR */
+.navbar{
+background:#0B3C5D;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+.logo{color:#fff;font-size:22px;font-weight:bold}
+.navbar a{color:#fff;text-decoration:none;margin:0 10px;font-size:14px}
+.search-box input{padding:6px;border-radius:4px;border:none}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") center/cover no-repeat;
+color:#fff;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center
+}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{font-size:18px;margin-bottom:20px}
+.btn{
+background:#F4B400;
+color:#000;
+padding:12px 22px;
+text-decoration:none;
+font-weight:bold;
+border-radius:4px
+}
+
+/* SECTIONS */
+section{padding:60px 40px;text-align:center}
+h2{font-size:30px;margin-bottom:25px}
+
+/* SERVICES */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+.service-box{
+background:#EAEAEA;
+padding:45px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+border-radius:6px
+}
+.service-box:hover{
+background:#0B3C5D;
+color:#fff;
+transform:translateY(-10px)
+}
+
+/* PROJECTS */
+.project-wrapper{
+max-width:1000px;
+margin:auto;
+overflow:hidden
+}
+.project-slider{
+display:flex;
+transition:.5s
+}
+.project-card{
+min-width:100%;
+transition:.3s
+}
+.project-card img{
+width:100%;
+height:380px;
+object-fit:cover;
+display:block
+}
+.project-card:hover{transform:scale(1.03)}
+
+/* REVIEWS */
+.reviews{background:#EAEAEA}
+.review-box{display:none;max-width:700px;margin:auto}
+.stars{color:#F4B400;margin-bottom:10px}
+
+/* FOOTER */
+footer{
+background:#0B3C5D;
+color:#fff;
+padding:25px;
+text-align:center
+}
+.social a{color:#fff;margin:0 10px;font-size:18px}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">SolidRise</div>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="clients.html">Clients</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search Projects">
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<h1>We Build Strong & Reliable Structures</h1>
+<p>Residential • Commercial • Industrial Construction</p>
+<a href="#" class="btn">View Projects</a>
+</section>
+
+<!-- SERVICES -->
+<section>
+<h2>Our Services</h2>
+<div class="services-grid">
+<div class="service-box">Residential Construction</div>
+<div class="service-box">Commercial Buildings</div>
+<div class="service-box">Industrial Projects</div>
+<div class="service-box">Interior & Renovation</div>
+<div class="service-box">Road & Civil Work</div>
+<div class="service-box">Project Management</div>
+<div class="service-box">Demolition</div>
+<div class="service-box">Interior Fit-Outs</div>
+<div class="service-box">Mechanical & Electrical</div>
+<div class="service-box">HVAC Installation</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Featured Projects</h2>
+<div class="project-wrapper">
+<div class="project-slider" id="projectSlider">
+<div class="project-card"><img src="https://images.unsplash.com/photo-1501183638710-841dd1904471"></div>
+<div class="project-card"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb"></div>
+<div class="project-card"><img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6"></div>
+<div class="project-card"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858"></div>
+<div class="project-card"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00"></div>
+<div class="project-card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"></div>
+</div>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+<h2>Client Reviews</h2>
+
+<div class="review-box"><div class="stars">★★★★★</div><p>Professional work with excellent quality and on-time delivery.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Very reliable construction team with smooth coordination.</p></div>
+<div class="review-box"><div class="stars">★★★★☆</div><p>Strong structure and clean finishing.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Project completed before deadline.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>High quality materials and planning.</p></div>
+<div class="review-box"><div class="stars">★★★★☆</div><p>Good communication throughout the project.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Skilled engineers and professional staff.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Modern construction approach.</p></div>
+<div class="review-box"><div class="stars">★★★★☆</div><p>Very satisfied with final output.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Transparent pricing and honest work.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Best construction experience till date.</p></div>
+<div class="review-box"><div class="stars">★★★★☆</div><p>Strong supervision on site.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Highly recommended construction company.</p></div>
+<div class="review-box"><div class="stars">★★★★★</div><p>Clean work and timely handover.</p></div>
+<div class="review-box"><div class="stars">★★★★☆</div><p>Very professional behaviour.</p></div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 prashantxgrowth</p>
+<div class="social">
+<a href="https://instagram.com/prashantxgrowth"><i class="fab fa-instagram"></i></a>
+<a href="https://instagram.com/prashantxgrowth"><i class="fab fa-linkedin"></i></a>
+<a href="https://instagram.com/prashantxgrowth"><i class="fab fa-whatsapp"></i></a>
+</div>
+</footer>
+
+<script>
+/* PROJECT SLIDER */
+const pSlider = document.getElementById("projectSlider");
+const pCount = pSlider.children.length;
+let pIndex = 0;
+
+setInterval(()=>{
+  pIndex = (pIndex + 1) % pCount;
+  pSlider.style.transform = `translateX(-${pIndex * 100}%)`;
+},3000);
+
+/* REVIEW SLIDER */
+const reviews = document.querySelectorAll(".review-box");
+let rIndex = 0;
+reviews[0].style.display = "block";
+
+setInterval(()=>{
+  reviews[rIndex].style.display = "none";
+  rIndex = (rIndex + 1) % reviews.length;
+  reviews[rIndex].style.display = "block";
+},2500);
+</script>
+
+</body>
+</html>

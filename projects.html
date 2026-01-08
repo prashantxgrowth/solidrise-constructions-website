@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Projects | SolidRise Constructions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+.project-filters{text-align:center;margin-bottom:40px}
+.project-filters button{
+padding:8px 16px;
+margin:5px;
+border:none;
+cursor:pointer;
+background:#0B3C5D;
+color:#fff;
+border-radius:4px
+}
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px
+}
+.project-item{
+background:#fff;
+border-radius:6px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+transition:.3s
+}
+.project-item:hover{transform:translateY(-6px)}
+.project-item img{
+width:100%;
+height:200px;
+object-fit:cover
+}
+.project-content{padding:15px;text-align:left}
+.project-content h4{margin-bottom:6px}
+.project-meta{font-size:14px;color:#555}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">SolidRise</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="clients.html">Clients</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Search Projects">
+  </div>
+</div>
+
+<!-- HERO (NEW IMAGE – NOT USED ANYWHERE ELSE) -->
+<section class="hero" style="
+height:55vh;
+background:url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc') center/cover no-repeat;">
+<h1>Our Projects</h1>
+<p>Construction Projects Across Noida</p>
+</section>
+
+<!-- FILTERS -->
+<section>
+<div class="project-filters">
+<button onclick="filterProjects('all')">All</button>
+<button onclick="filterProjects('residential')">Residential</button>
+<button onclick="filterProjects('commercial')">Commercial</button>
+<button onclick="filterProjects('industrial')">Industrial</button>
+<button onclick="filterProjects('completed')">Completed</button>
+<button onclick="filterProjects('ongoing')">Ongoing</button>
+</div>
+
+<!-- PROJECT GRID -->
+<div class="projects-grid">
+
+<div class="project-item residential completed">
+<img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6">
+<div class="project-content"><h4>Green Residency</h4>
+<div class="project-meta">Noida Sector 137 • Residential • Completed</div></div>
+</div>
+
+<div class="project-item commercial completed">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+<div class="project-content"><h4>Prime Business Tower</h4>
+<div class="project-meta">Noida Sector 62 • Commercial • Completed</div></div>
+</div>
+
+
+<div class="project-item residential ongoing">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750">
+<div class="project-content"><h4>Sky Heights</h4>
+<div class="project-meta">Noida Sector 75 • Residential • Ongoing</div></div>
+</div>
+
+<div class="project-item commercial completed">
+<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
+<div class="project-content"><h4>Metro Trade Centre</h4>
+<div class="project-meta">Noida Sector 18 • Commercial • Completed</div></div>
+</div>
+
+<div class="project-item residential completed">
+<img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+<div class="project-content"><h4>Urban Homes</h4>
+<div class="project-meta">Noida Sector 120 • Residential • Completed</div></div>
+</div>
+
+<div class="project-item industrial completed">
+<img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00">
+<div class="project-content"><h4>Manufacturing Unit</h4>
+<div class="project-meta">Noida Sector 80 • Industrial • Completed</div></div>
+</div>
+
+
+<div class="project-item residential completed">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<div class="project-content"><h4>Elite Residency</h4>
+<div class="project-meta">Noida Sector 104 • Residential • Completed</div></div>
+</div>
+
+<div class="project-item commercial completed">
+<img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
+<div class="project-content"><h4>IT Office Complex</h4>
+<div class="project-meta">Noida Sector 142 • Commercial • Completed</div></div>
+</div>
+
+<div class="project-item residential ongoing">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+<div class="project-content"><h4>Silver Homes</h4>
+<div class="project-meta">Noida Sector 78 • Residential • Ongoing</div></div>
+</div>
+
+<div class="project-item commercial completed">
+<img src="https://images.unsplash.com/photo-1481277542470-605612bd2d61">
+<div class="project-content"><h4>Business Bay</h4>
+<div class="project-meta">Noida Sector 90 • Commercial • Completed</div></div>
+</div>
+
+<div class="project-item industrial ongoing">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<div class="project-content"><h4>Warehouse Park</h4>
+<div class="project-meta">Noida Sector 83 • Industrial • Ongoing</div></div>
+</div>
+
+<div class="project-item residential completed">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<div class="project-content"><h4>Lake View Residency</h4>
+<div class="project-meta">Noida Sector 50 • Residential • Completed</div></div>
+</div>
+
+<div class="project-item commercial ongoing">
+<img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba">
+<div class="project-content"><h4>Retail Square</h4>
+<div class="project-meta">Noida Sector 16 • Commercial • Ongoing</div></div>
+</div>
+
+<div class="project-item residential completed">
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5">
+<div class="project-content"><h4>Sunrise Apartments</h4>
+<div class="project-meta">Noida Sector 121 • Residential • Completed</div></div>
+</div>
+
+<div class="project-item industrial completed">
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+<div class="project-content"><h4>Industrial Facility</h4>
+<div class="project-meta">Noida Sector 10 • Industrial • Completed</div></div>
+</div>
+
+
+<div class="project-item residential ongoing">
+<img src="https://images.unsplash.com/photo-1515263487990-61b07816b324">
+<div class="project-content"><h4>Garden Residency</h4>
+<div class="project-meta">Noida Sector 44 • Residential • Ongoing</div></div>
+</div>
+
+<div class="project-item residential completed">
+  <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Green Residency</h4>
+    <div class="project-meta">
+      Location: Noida Sector 137<br>
+      Type: Residential<br>
+      Status: Completed<br>
+      Budget: ₹12 Cr
+    </div>
+  </div>
+</div>
+<div class="project-item commercial completed">
+  <img src="https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Prime Business Tower</h4>
+    <div class="project-meta">
+      Location: Noida Sector 62<br>
+      Type: Commercial<br>
+      Status: Completed<br>
+      Budget: ₹28 Cr
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 3 -->
+<div class="project-item industrial ongoing">
+  <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Logistics & Warehouse Hub</h4>
+    <div class="project-meta">
+      Location: Noida Sector 65<br>
+      Type: Industrial<br>
+      Status: Ongoing<br>
+      Budget: ₹35 Cr
+    </div>
+  </div>
+</div>
+<div class="project-item residential ongoing">
+  <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Sky Heights Apartments</h4>
+    <div class="project-meta">
+      Location: Noida Sector 75<br>
+      Type: Residential<br>
+      Status: Ongoing<br>
+      Budget: ₹18 Cr
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 5 -->
+<div class="project-item commercial completed">
+  <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Metro Trade Centre</h4>
+    <div class="project-meta">
+      Location: Noida Sector 18<br>
+      Type: Commercial<br>
+      Status: Completed<br>
+      Budget: ₹22 Cr
+    </div>
+  </div>
+</div>
+<div class="project-item residential completed">
+  <img src="https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Urban Homes</h4>
+    <div class="project-meta">
+      Location: Noida Sector 120<br>
+      Type: Residential<br>
+      Status: Completed<br>
+      Budget: ₹14 Cr
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 7 -->
+<div class="project-item industrial completed">
+  <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800">
+  <div class="project-content">
+    <h4>Manufacturing Facility</h4>
+    <div class="project-meta">
+      Location: Noida Sector 80<br>
+      Type: Industrial<br>
+      Status: Completed<br>
+      Budget: ₹40 Cr
+    </div>
+  </div>
+</div>
+
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 prashantxgrowth</p>
+<div class="social">
+<a href="https://instagram.com/prashantxgrowth"><i class="fab fa-instagram"></i></a>
+<a href="https://instagram.com/prashantxgrowth"><i class="fab fa-linkedin"></i></a>
+<a href="https://instagram.com/prashantxgrowth"><i class="fab fa-whatsapp"></i></a>
+</div>
+</footer>
+
+<script>
+function filterProjects(type){
+document.querySelectorAll('.project-item').forEach(item=>{
+item.style.display =
+(type==='all'||item.classList.contains(type))?'block':'none';
+});
+}
+</script>
+
+</body>
+</html>
